@@ -1,10 +1,18 @@
 import React from 'react'
-import styles from '../styles/home.module.scss'
+
+import Head from '../../node_modules/next/head'
 
 
 function Home() {
   return (
-    <h1 className={styles.title}>App está rodando</h1>
+    <>
+      <Head>
+        <title>
+          Início | ig.news
+        </title>
+      </Head>
+      <h1>Teste de app</h1>
+    </>
   )
 }
 
