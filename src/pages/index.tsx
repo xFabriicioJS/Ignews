@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from './home.module.scss'
-
+import { GetServerSideProps } from '../../node_modules/next';
 import Head from '../../node_modules/next/head'
 import { Header } from '../components/Header/index'
+import { stripe } from '../services/stripe';
 
 
 function Home() {
@@ -29,6 +30,11 @@ function Home() {
       </main>
     </>
   )
+}
+
+export const getSeverSideProps : GetServerSideProps= async () => {
+
+
 }
 
 export default Home
